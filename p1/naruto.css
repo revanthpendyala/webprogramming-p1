@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+body .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+body .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.main-narutobg{
+ width:100%;
+ height: 100vh;
+ background-image:url(index.png);
+ background-size: 100% 100%;
+ position: relative;
+}
+
+.naruto img{
+   position: absolute;
+   bottom: 50px;
+   animation-name: narutorun;
+   animation-duration: 6s;
+   animation-iteration-count: 5;
+   animation-timing-function: linear;
+
+
+}
+@keyframes narutorun {
+    0%{left: 0%;}
+    
+    100%{ left: 90%;}
+
+}
+
+h2{
+  color: brown;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: 'bangers', cursive;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  animation: narutotext 4s linear;
+  animation-iteration-count: 5;
+  animation-delay: 1s;
+
+
+}
+@keyframes narutotext {
+  0%{font-size:2em;  }
+  100%{font-size: 4em; left: 40%; }
+  
+}
+
+
