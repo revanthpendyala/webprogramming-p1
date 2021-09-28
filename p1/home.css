@@ -1,0 +1,146 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
+    border: 5px;
+    border-radius:20px;
+  }
+  
+  .cookbook {
+      width: 33.3%;
+      height: 100%;
+      float: left;
+      background-color: rosybrown;
+      border-collapse: collapse;
+      
+  }
+  
+  .marvel {
+      width: 33.4%;
+      height: 100%;
+      float: left;
+      background-color: grey;
+      border-collapse: collapse;
+  }
+  
+  .narutorun {
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-color: pink;
+    border-collapse: collapse;
+  }
+  
+
+
+.marvel img{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.cookbook img{
+ width: 100%;
+ height: 100vh;
+}
+  
+.narutorun img{
+    width: 100%;
+    height: 100vh;
+}
+
+.narutoimage {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .marvelimage {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .cookbookimage {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .narutorun:hover .narutoimage {
+    opacity: 0.3;
+  }
+  
+  .narutorun:hover .middle {
+    opacity: 1;
+  }
+
+  .narutorun .text{
+
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .marvel:hover .marvelimage {
+    opacity: 0.3;
+  }
+
+  .marvel:hover .middle {
+    opacity: 1;
+  }
+
+  .marvel .text{
+
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
+  .cookbook .text1 {
+    background-color:green;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .cookbook:hover .cookbookimage {
+    opacity: 0.3;
+  }
+
+  .cookbook:hover .middle {
+    opacity: 1;
+  }
+
+  .cookbook .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 16.75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
